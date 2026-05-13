@@ -24,7 +24,7 @@
             height: 30px;
             padding: 15px ;
             margin: 5px auto;
-            border: 1px solid rgb(156, 172, 177);
+            border: 1px solid rgb(255, 0, 98);
         }
         .row {
         display: flex;           
@@ -32,21 +32,21 @@
         justify-content: center;
         }
          .smallcard {
-            background: rgb(148, 208, 220);
+            background: rgb(79, 9, 255);
             border-radius: 10px;
             width: 45%;
             height: 15px;
             padding: 20px ;
             margin: 5px auto;
-            border: 1px solid rgb(156, 172, 177);
+            border: 1px solid rgb(247, 0, 53);
         }
         .actioncard {
-            background: rgb(252, 254, 255);
+            background: rgb(87, 255, 196);
             border-radius: 10px;
             width: 90%;
-            height: 10px;
+            height: 20px;
             padding: 15px ;
-            margin: 5px auto;
+            margin: 9px auto;
             border: 1px solid rgb(166, 188, 196);
         } 
         .choosecard {
@@ -79,3 +79,4 @@
             transform: scale(1.01);
         }
 >>>>>>> 26f48f43b409130098e9da2828f6fd28db869392
+
