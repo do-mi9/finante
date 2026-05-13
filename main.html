@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Financial Insights</title>
+        <link rel="stylesheet" href="style.css">
     </head>    
 <body style="background-color: rgb(255, 255, 255);"></body>
     <div class="titlecard">
@@ -19,14 +20,14 @@
         <div class="smallcard">
         Buget
         </div>
-        
-    </div>
-    <hr style="width: 97%; margin: 5px; color: #a0bfc6;">
-    <div >
+        </div>
+        <hr style="width: 97%; margin: 5px; color: #a0bfc6;">
+        <div >
         <label> Suma </label>
-        <input type="number" class="actioncard">
-        <label> Categorie </label>
-        <select class="choosecard">
+        <input type="number" class="actioncard" placeholder="0">
+        <div class="actioncard">
+        <label > Categorie </label>
+        <select id="actioncard">
         <option value="0"> Select option</option>
         <option value="1">Alimentație</option>
         <option value="2">Chirie</option>
@@ -38,9 +39,16 @@
         <option value="8">Economii</option>
         <option value="9">Servicii Comunale</option>
         </select>
+    </div>
         <label> Descriere </label>
         <input type="text" class="actioncard" placeholder="Ex: Mâncare, chirie, etc.">
   </div>
-    <hr style="width: 97%; margin: 5px; color: #a0bfc6;">
+    
+     <div class="adaugacard">
+    + Adaugă cheltuieli
+     </div>
+    <hr style="width: 97%; margin: 10px; color: #a0bfc6;">
+    
+  </div>
 </body>
 </html>
