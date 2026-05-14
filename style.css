@@ -1,30 +1,30 @@
         .titlecard {
-            background: rgb(146, 206, 218);
+            background: #FFB2B2;
             border-radius: 10px;
             width: 100%;
             height: 30px;
             padding: 20px ;
             margin: 0 auto;
-            border: 1px solid rgb(166, 188, 196);
+            border: 1px solid #d78282;
             margin-bottom: 10px;
         }        
         .maincard {
-            background: rgb(220, 235, 238);
+            background: #FFF2D0;
             border-radius: 10px;
             width: 350px;
             height: 600px;
             padding: 20px ;
             margin: 0 auto;
-            border: 1px solid rgb(166, 188, 196);
+            border: 1px solid #f1dca8;
         }
         .cheltuielicard {
-            background: rgb(148, 208, 220);
+            background: #FFB2B2;
             border-radius: 25px;
             width: 90%;
             height: 30px;
             padding: 15px ;
             margin: 5px auto;
-            border: 1px solid rgb(255, 0, 98);
+            border: 1px solid #E36A6A;
         }
         .row {
         display: flex;           
@@ -32,49 +32,49 @@
         justify-content: center;
         }
          .smallcard {
-            background: rgb(79, 9, 255);
+            background: #E36A6A;
             border-radius: 10px;
             width: 45%;
             height: 15px;
             padding: 20px ;
             margin: 5px auto;
-            border: 1px solid rgb(247, 0, 53);
+            border: 1px solid #E36A6A;
         }
         .actioncard {
             margin : 10px auto;
         }
         .actioncard select, .actioncard input {
-            background: rgb(87, 255, 196);
+            background: #FFFBF1;
             border-radius: 10px;
             width: 100%;
             height: 35px;
             margin: 9px auto;
-            border: 1px solid rgb(166, 188, 196);
+            border: 1px solid #FFB2B2;
         } 
         .adaugacard {
-            background: rgb(140, 208, 221);
+            background: #FFB2B2;
             border-radius: 30px;
-            width: 90%;
+            width: 102%;
             height: 20px;
             padding: 20px ;
             margin: 5px auto;
-            border: 1px solid rgb(166, 188, 196);
+            border: 1px solid #E36A6A;
             transition: 0.3s;
         }
         .adaugacard:hover {
-            background: rgb(115, 165, 175);
+            background: #ac4a4a;
             cursor: pointer;
             transform: scale(1.01);
         }
         .listcard li {
             list-style: none;
-            background: rgb(236, 252, 255);
+            background: #FFFBF1;
             border-radius: 15px;
             width: 80%;
             height: 20px;
             padding: 15px ;
             margin: 5px auto;
-            border: 1px solid rgb(162, 189, 216);
+            border: 1px solid #FFF2D0;
         }
 
 

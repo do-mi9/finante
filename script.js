@@ -30,19 +30,29 @@ function afisareCheltuieli() {
         total += c.suma;
         let li = document.createElement("li");
         li.innerHTML = `
-            <div class="suma-badge">
-                ${c.suma} MDL
-            </div>
-            <div class="descriere-mica">
+            <span class="suma-badge">
+            ${c.suma} MDL
+            </span>
+            <span class="descriere-mica">
                 ${c.descriere}
-            </div>
-            <button class="sterge-btn">
-                ✕
-            </button>
+            </span>
+            <button class="sterge-btn"
+onclick="stergeCheltuiala(${c.id})">
+✕
+</button>
         `;
 
         listaCheltuieli.appendChild(li);}
 
     document.getElementById("totalIntrari")
     .textContent = total;
+}
+
+function stergeCheltuiala(id) {
+
+    cheltuieli = cheltuieli.filter(function(c) {
+        return c.id !== id;
+    });
+
+    afisareCheltuieli();
 }
