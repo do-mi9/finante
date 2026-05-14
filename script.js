@@ -10,6 +10,10 @@ function adaugacheltuieli() {
     
 }
 
+function afisareCheltuieli() {
+    let listaCheltuieli = document.querySelector(".listcard");
+    listaCheltuieli.innerHTML = "";
+
 for (let i = 0; i < cheltuieli.length; i++) {
             let c = cheltuieli[i];
             total += c.suma;
