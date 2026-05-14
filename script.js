@@ -15,17 +15,4 @@ function afisareCheltuieli() {
     listaCheltuieli.innerHTML = "";
 
 
-}
-for (let i = 0; i < cheltuieli.length; i++) {
-            let c = cheltuieli[i];
-            total += c.suma;
 
-            let li = document.createElement('li');
-            li.innerHTML = `
-                    <div class="suma-badge">${c.suma} MDL</div>
-                    <div class="descriere-mica"> ${c.descriere}</div>
-                </div>
-                <button class="sterge-btn" onclick="stergeCheltuiala(${c.id})">✕</button>
-            `;
-            lista.appendChild(li);
-        }
