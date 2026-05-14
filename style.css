@@ -66,5 +66,15 @@
             cursor: pointer;
             transform: scale(1.01);
         }
->>>>>>> 26f48f43b409130098e9da2828f6fd28db869392
+        .listcard li {
+            list-style: none;
+            background: rgb(236, 252, 255);
+            border-radius: 15px;
+            width: 80%;
+            height: 20px;
+            padding: 15px ;
+            margin: 5px auto;
+            border: 1px solid rgb(162, 189, 216);
+        }
+
 
