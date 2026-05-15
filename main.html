@@ -5,7 +5,7 @@
         <title>Financial Insight</title>
         <link rel="stylesheet" href="style.css">
     </head>    
-<body style="background-color: #FFFBF1;"></body>
+<body style="background-color: #FFFBF1; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" ></body>
     <div class="titlecard">
         Financial Insight
     </div>
@@ -21,7 +21,7 @@
         Buget
         </div>
         </div>
-        <hr style="width: 97%;height: 2px; margin: 5px; color: #FFB2B2;">
+    <hr style="width: 97%; height: 1px; margin: 10px;border: 1px solid #FFB2B2; color: #FFB2B2;">
         <div class="actioncard">
         <label> Suma </label>
         <input type="number" placeholder="0" id="sumaInput">
@@ -30,15 +30,15 @@
         <label > Categorie </label>
         <select id="categorieSelect" name="categorie" >
         <option value="0"> Select option</option>
-        <option value="1">Alimentație</option>
-        <option value="2">Chirie</option>
-        <option value="3">Transport</option>
-        <option value="4">Educație</option>
-        <option value="5">Shopping</option>
-        <option value="6">Sănătate</option>
-        <option value="7">Divertisment</option>
-        <option value="8">Economii</option>
-        <option value="9">Servicii Comunale</option>
+        <option value="Alimentație">Alimentație</option>
+        <option value="Chirie">Chirie</option>
+        <option value="Transport">Transport</option>
+        <option value="Educație">Educație</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Sănătate">Sănătate</option>
+        <option value="Divertisment">Divertisment</option>
+        <option value="Economii">Economii</option>
+        <option value="Servicii Comunale">Servicii Comunale</option>
         </select>
     </div>
     <div class="actioncard">
@@ -49,9 +49,9 @@
      <button class="adaugacard" onclick="adaugacheltuieli()">
     + Adaugă cheltuieli 
     </button>
-    <hr style="width: 97%; height: 2px; margin: 10px; color: #FFB2B2;">
+    <hr style="width: 97%; height: 1px; margin: 10px;border: 1px solid #FFB2B2; color: #FFB2B2;">
     <div> 
-        Total intrari: <span id="totalIntrari">0</span>
+        Total cheltuieli: <span id="totalcheltuieli">0 MDL</span>
     </div>
     <div class="listcard" id="listcard">
     <ul id="listaCheltuieli">

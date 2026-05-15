@@ -19,33 +19,24 @@ function adaugacheltuieli() {
 }
 
 function afisareCheltuieli() {
-    let listaCheltuieli =
-    document.getElementById("listaCheltuieli");
+    let listaCheltuieli = document.getElementById("listaCheltuieli");
     listaCheltuieli.innerHTML = "";
     let total = 0;
-
     for (let i = 0; i < cheltuieli.length; i++) {
 
         let c = cheltuieli[i];
         total += c.suma;
         let li = document.createElement("li");
         li.innerHTML = `
-            <span class="suma-badge">
-            ${c.suma} MDL
+            <span class="categorie-badge">${c.categorie}</span>
+            <span class="suma-badge">${c.suma} MDL
             </span>
-            <span class="descriere-mica">
-                ${c.descriere}
-            </span>
-            <button class="sterge-btn"
-onclick="stergeCheltuiala(${c.id})">
-✕
-</button>
-        `;
-
+            <button class="sterge-btn" style="margin-left: 40px;" onclick="stergeCheltuiala(${c.id})">✕</button>
+            <div class="descriere-mica">${c.descriere}</div>`;
+            
         listaCheltuieli.appendChild(li);}
 
-    document.getElementById("totalIntrari")
-    .textContent = total;
+    document.getElementById("totalcheltuieli").textContent = total + " MDL";
 }
 
 function stergeCheltuiala(id) {
