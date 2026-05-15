@@ -31,8 +31,11 @@ function afisareCheltuieli() {
             <span class="categorie-badge">${c.categorie}</span>
             <span class="suma-badge">${c.suma} MDL
             </span>
-            <button class="sterge-btn" style="margin-left: 40px;" onclick="stergeCheltuiala(${c.id})">✕</button>
-            <div class="descriere-mica">${c.descriere}</div>`;
+            <div class="descriere-mica">${c.descriere}
+            <button class="sterge-btn" style="margin-left: 200px;" >
+            <span onclick="stergeCheltuiala(${c.id})">✕</button></span></div> 
+            <div class="descriere-mica">Data: ${new Date(c.id).toLocaleDateString()}</div>
+            `;
             
         listaCheltuieli.appendChild(li);}
 
