@@ -1,0 +1,6 @@
+# Fișiere sistem
+.DS_Store
+Thumbs.db
+
+# Loguri
+*.log
