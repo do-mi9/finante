@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html lang="ro">
-    <head>
-        <meta charset="UTF-8">
-        <title>Financial Insight</title>
-        <link rel="stylesheet" href="style.css">
-    </head>    
-<body style="background-color: #FFFBF1; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" ></body>
-    <div class="titlecard">
-        Financial Insight
-    </div>
-    <div  class="maincard">
-        <div class="cheltuielicard">
-        Cheltuieli
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Insight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="titlecard">Financial Insight</div>
+
+    <div class="maincard">
+        <div class="card">
+            <button class="toggle-btn active" id="btnCheltuieli">Cheltuieli</button>
+            <div class="toggle-row">
+                <button class="toggle-btn" id="btnVenituri">Venituri</button>
+            </div>
         </div>
-         <div class="row">
-        <div class="smallcard">
-        Venituri
-        </div>
-        <div class="smallcard">
-        Buget
-        </div>
-        </div>
-    <hr style="width: 97%; height: 1px; margin: 10px;border: 1px solid #FFB2B2; color: #FFB2B2;">
+
+        <hr class="divider">
+
         <div class="actioncard">
-        <label> Suma </label>
-        <input type="number" placeholder="0" id="sumaInput">
+            <label>Suma</label>
+            <input type="number" placeholder="0" id="sumaInput" min="0">
         </div>
+
         <div class="actioncard">
-        <label > Categorie </label>
-        <select id="categorieSelect" name="categorie" >
-        <option value="0"> Select option</option>
-        <option value="Alimentație">Alimentație</option>
-        <option value="Chirie">Chirie</option>
-        <option value="Transport">Transport</option>
-        <option value="Educație">Educație</option>
-        <option value="Shopping">Shopping</option>
-        <option value="Sănătate">Sănătate</option>
-        <option value="Divertisment">Divertisment</option>
-        <option value="Economii">Economii</option>
-        <option value="Servicii Comunale">Servicii Comunale</option>
-        </select>
+            <label>Categorie</label>
+            <select id="categorieSelect"></select>
+        </div>
+
+        <div class="actioncard">
+            <label>Descriere <span class="optional">(opțional)</span></label>
+            <input type="text" placeholder="Ex: Mâncare, chirie, etc." id="descriereInput">
+        </div>
+
+        <button class="adaugacard" onclick="adaugaInregistrare()">+ Adaugă cheltuială</button>
+
+        <hr class="divider">
+
+        <div class="total-row">Total: <span id="totalContainer">0 MDL</span></div>
+
+        <div class="listcard">
+            <ul id="listaIntrari">
+                <li>Nu sunt cheltuieli înregistrate</li>
+            </ul>
+        </div>
     </div>
-    <div class="actioncard">
-        <label> Descriere </label>
-        <input type="text" class="actioncard" placeholder="Ex: Mâncare, chirie, etc." id="descriereInput">
-  </div>
-    
-     <button class="adaugacard" onclick="adaugacheltuieli()">
-    + Adaugă cheltuieli 
-    </button>
-    <hr style="width: 97%; height: 1px; margin: 10px;border: 1px solid #FFB2B2; color: #FFB2B2;">
-    <div> 
-        Total cheltuieli: <span id="totalcheltuieli">0 MDL</span>
-    </div>
-    <div class="listcard" id="listcard">
-    <ul id="listaCheltuieli">
-        <li>Nu sunt cheltuieli înregistrate</li>
-    </ul>
-</div>
-    
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
