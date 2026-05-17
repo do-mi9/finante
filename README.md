@@ -15,16 +15,17 @@ Important things for people trying the project
 
 Instructions on How the Site Works
 1.	Choose the desired mode: 
-      Expenses for adding expenses 
-      Income for adding income 
+•	Expenses for adding expenses 
+•	Income for adding income 
 2.	Enter the amount in the Amount field. 
 3.	Select a category from the dropdown menu. 
 4.	Optionally, add a short description for the transaction. 
 5.	Press the Add button to save the entry. 
 6.	The transaction will appear in the list below together with: 
-      category 
-      amount 
-      description 
-      date 
+•	category 
+•	amount 
+•	description 
+•	date 
 7.	The application automatically calculates and displays the total amount for the selected mode. 
 8.	Switching between Expenses and Income changes the displayed categories, entries, and totals.
+
