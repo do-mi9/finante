@@ -13,11 +13,35 @@ body {
     background-color: #F4A0A0;
     color: #2a1a1a;
     font-size: 1.1rem;
-    padding: 20px 24px;
+    padding: 15px;
     border-radius: 12px;
     margin: 16px auto;
     width: 95%;
-    max-width: 420px;
+    display : flex;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 30%;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    background-color: #885151;
+    color: white;
 }
 
 .maincard {
@@ -36,17 +60,21 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    background-color: #f4c0c0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 .toggle-btn {
-    width: 100%;
-    padding: 18px;
+    width: 45%;
+    padding: 10px;
     border: none;
     border-radius: 14px;
     font-size: 1rem;
     font-family: inherit;
     cursor: pointer;
-    background-color: #E8856A;
+    background-color: transparent;
     color: #2a1a1a;
     transition: background-color 0.2s, opacity 0.2s;
     text-align: left;
@@ -148,6 +176,7 @@ hr.divider {
     flex-direction: column;
     gap: 10px;
     padding: 0;
+    margin: 10px 20px;
 }
 
 #listaIntrari li {
@@ -162,7 +191,6 @@ hr.divider {
     border: 1px solid #f0dfc0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: 6px;
     position: relative;
 }

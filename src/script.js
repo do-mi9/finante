@@ -152,14 +152,14 @@ function setMode(mode) {
     let btnVenit = document.getElementById("btnVenituri");
 
     if (mode === "cheltuieli") {
-        btnChelt.classList.add("active-card");
-        btnVenit.classList.remove("active-card");
+        btnChelt.classList.add("active");
+        btnVenit.classList.remove("active");
         document.querySelector(".adaugacard")
         .textContent = "+ Adaugă cheltuială";
     }
     else {
-        btnVenit.classList.add("active-card");
-        btnChelt.classList.remove("active-card");
+        btnVenit.classList.add("active");
+        btnChelt.classList.remove("active");
         document.querySelector(".adaugacard")
         .textContent = "+ Adaugă venit";
     }
